@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WalletAI</title>
-    <link rel="stylesheet" href="ExpenseBreak.css">
-</head>
-<body>
+    <link rel="stylesheet" href="ExpenseBreak.css" />
+  </head>
+  <body>
     <div class="container">
-        <nav class="sidebar">
-            <div class="Micon">
-                <img src="images/wallet-icon.png" alt="">
-            </div>
-            <ul>
-                <li class="sidebar-item"><a href="home.html"><img src="images/dashboard1.svg" alt="">Dashboard</a></li>
-                <li class="sidebar-item"><a href="walletAi.html"><img src="images/walletai.svg" alt="">Wallet AI</a></li>
-                <li class="sidebar-item"><a href="#"><img src="images/charts.svg" alt="">Charts</a></li>
-                <li class="sidebar-item"><a href="Setting.html"><img src="images/setting.svg" alt="">Settings</a></li>
-                <li class="sidebar-item"><a href="#"><img src="images/signOut.svg" alt="">Sign Out</a></li>
-            </ul>
-        </nav>
+      <nav class="sidebar">
+        <div class="Micon">
+          <img src="images/wallet-icon.png" alt="" />
+        </div>
+        <ul>
+          <li class="sidebar-item">
+            <a href="home.html"
+              ><img src="images/dashboard1.svg" alt="" />Dashboard</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="walletAi.html"
+              ><img src="images/walletai.svg" alt="" />Wallet AI</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#"><img src="images/charts.svg" alt="" />Charts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="Setting.html"
+              ><img src="images/setting.svg" alt="" />Settings</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#"><img src="images/signOut.svg" alt="" />Sign Out</a>
+          </li>
+        </ul>
+      </nav>
 
-
-    <div class="main-content">
+      <div class="main-content">
         <header>
-            <div class="profile">
-                <img src="images/Profile.png" alt="Profile" class="profile-img">
-            </div>
+          <div class="profile">
+            <img src="images/Profile.png" alt="Profile" class="profile-img" />
+          </div>
         </header>
 
         <div class="main">
-            <div class="welcome-section">
-            <img src="images/AI.svg" alt="">
+          <div class="welcome-section">
+            <img src="images/AI.svg" alt="" />
 
             <h1>Expense BreakDown</h1>
             <h4>Analyze your Earnings and Spending Smartly..</h4>
 
             <div class="prompt-inp">
-              
-              <input type="text" name="" id="" placeholder="Prompt" >
+              <p class="promptStyle" onclick="handlePrompt">"Provide me the Expense BreakDown according to my credit Limit"</p>
+              <p class="promptStyle" onclick="prompt('Enter the amiunt')">"Provide me an Expense BreakDown, If I want to save ______ rupees"</p>
             </div>
-        </div>
+          </div>
         </div>
 
-
-<!-- ------------------ -->
+        <!-- ------------------ -->
+      </div>
+      <!-- ---------------? -->
     </div>
-<!-- ---------------? -->
-    </div>
-</body>
+  </body>
 </html>

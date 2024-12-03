@@ -133,6 +133,7 @@ header {
     height: 5vh;
     border-radius: 30px;
     border-radius: 17px;
+    margin-bottom: 6px;
 }
 .prompt-inp{
     position: relative;
