@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="Micon">
+                <img src="images/wallet-icon.png" alt="">
+            </div>
+            <ul>
+                <li class="sidebar-item"><a href="home.html"><img src="images/dashboard1.svg" alt="">Dashboard</a></li>
+                <li class="sidebar-item"><a href="walletAi.html"><img src="images/walletai.svg" alt="">Wallet AI</a></li>
+                <li class="sidebar-item"><a href="#"><img src="images/charts.svg" alt="">Charts</a></li>
+                <li class="sidebar-item"><a href="Setting.html"><img src="images/setting.svg" alt="">Settings</a></li>
+                <li class="sidebar-item"><a href="#"><img src="images/signOut.svg" alt="">Sign Out</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <input type="text" placeholder="Search here..." class="search-bar">
+                <div class="profile">
+                    <img src="images/Profile.png" alt="Profile" class="profile-img">
+                </div>
+            </header>
+
+            <!-- Expense Report -->
+             <div class="main">
+                <h2>Expense Report</h2>
+                <h6>Sept 1 - Sept 30,2024</h6>
+            <div class="expense-report">
+              
+                <div class="card total-credit">
+                    <img src="images/Bpx1.svg" alt="">
+                    <p>₹30000</p>
+                    <span>Total Credit</span>
+                    <small>+3% from last month</small>
+                </div>
+                <div class="card total-expense">
+                    <img src="images/box2.svg" alt="">
+                    <p>₹500</p>
+                    <span>Total Expense</span>
+                    <small>+8% from last month</small>
+                </div>
+                <div class="card todays-credit">
+                    <img src="images/box3.svg" alt="">
+                    <p>₹980</p>
+                    <span>Today's Credit</span>
+                    <small>-2% from yesterday</small>
+                </div>
+                <div class="card todays-expense">
+                    <img src="images/TodaysExp.svg" alt="">
+                    <p>₹400</p>
+                    <span>Today's Expense</span>
+                    <small>+10% from yesterday</small>
+                </div>
+            </div>
+        </div>
+            <!-- Statement Section -->
+            <div class="statement">
+                <h3>Statement</h3>
+                <button class="add-expense-btn" onclick="location.href='addExpense.html'">+ Add Expense</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Date & Time</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>House Rent</td>
+                            <td>10/09/2024, 18:00</td>
+                            <td><span class="icon house-icon"><img src="images/Vector.png" alt=""></span></td>
+                            <td>Rs.10000/-</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Office Cab</td>
+                            <td>10/09/2024, 11:00</td>
+                            <td><span class="icon cab-icon"><img src="images/travel.png" alt=""></span></td>
+                            <td>Rs.3000/-</td>
+
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Breakfast</td>
+                            <td>10/09/2024, 09:00</td>
+                            <td><span class="icon breakfast-icon">
+                                <img src="images/food.png" alt="">
+                            </span></td>
+                            <td>Rs.5000/-</td>
+
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Others</td>
+                            <td>09/09/2024, 20:00</td>
+                            <td><span class="icon wifi-icon"><img src="images/WIFI.svg" alt=""></span></td>
+                            <td>Rs.2000/-</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

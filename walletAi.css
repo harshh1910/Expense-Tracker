@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #181a1b;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    /* margin-top: 105px; */
+    background-color: #1e1e20;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    position: relative;
+    top: 29px}
+
+.sidebar-item {
+    margin: 15px 0;
+}
+.sidebar-item img{
+    margin-right: 10px;
+}
+
+.sidebar-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+.sidebar-item.active a, .sidebar-item a:hover {
+    background-color: #b0ded7;
+    color: black;
+}
+
+
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+.main-content input{
+    background:#2a2a2e;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+.main{
+    background: #2a2a2e;
+    border-radius: 10px;
+    text-align: center;
+    height: 77vh;
+}
+.main h2{
+    padding: 7px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.main h6{
+    margin-left: 16px;
+    color: grey
+}
+header {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile-img {
+    width: 40px;
+    border-radius: 50%;
+}
+.main{
+        height: 77vh;
+}
+.welcome-section{
+    padding: 21px;
+    margin-top: 0px;
+}
+
+.welcome-section img{
+    margin: 36px;
+}
+.welcome-section h1{
+    margin-top: 27px;
+    font-size: 4rem;
+    color: grey;
+}
+.welcome-section h4{
+    margin-bottom: 58px;
+    font-size: 2rem;
+    color: grey;
+
+}
+.btn button{
+    background-color: #8fe8e2;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
