@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WalletAI</title>
     <link rel="stylesheet" href="ExpenseBreak.css" />
+    <script src="ai.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -46,14 +47,22 @@
 
         <div class="main">
           <div class="welcome-section">
-            <img src="images/AI.svg" alt="" />
+            <div>
+              <img src="images/AI.svg" alt="" />
 
-            <h1>Expense BreakDown</h1>
-            <h4>Analyze your Earnings and Spending Smartly..</h4>
+              <h1>Expense BreakDown</h1>
+              <h4>Analyze your Earnings and Spending Smartly..</h4>
+            </div>
+
+            <p class="promptResponse"></p>
 
             <div class="prompt-inp">
-            <input type="text" name="" id="" class="promptStyle" onclick="handlePrompt" placeholder="Provide me the Expense BreakDown according to my credit Limit">
-            <input type="number" name="" id="promptStyle" placeholder="Provide me an Expense BreakDown, If I want to save ______ rupees">
+              <p class="promptStyle" onclick="handleExpenseBreakdown()">
+                Provide me the Expense BreakDown according to my credit Limit
+              </p>
+              <p class="promptStyle" onclick="handlePrompt">
+                Provide me an Expense BreakDown, If I want to save ______ rupees
+              </p>
             </div>
           </div>
         </div>
